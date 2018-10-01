@@ -786,8 +786,8 @@ ul.footer-links li:hover * {
   padding: 25px 35px;
 }
 
-form#views-exposed-form-virtual-museum-page-1 .form-checkbox { display: none; }
-form#views-exposed-form-virtual-museum-page-1 label.option {
+form#views-exposed-form-taxonomy-term-page-1 .form-checkbox { display: none; }
+form#views-exposed-form-taxonomy-term-page-1 label.option {
   font-size: 10px;
   font-weight: 700;
   padding: 5px 10px;
@@ -804,14 +804,14 @@ form#views-exposed-form-virtual-museum-page-1 label.option {
   margin-right: 5px;
 }
 
-form#views-exposed-form-virtual-museum-page-1 label:hover, form#views-exposed-form-virtual-museum-page-1 label:focus, form#views-exposed-form-virtual-museum-page-1 label:active {
+form#views-exposed-form-taxonomy-term-page-1 label:hover, form#views-exposed-form-taxonomy-term-page-1 label:focus, form#views-exposed-form-taxonomy-term-page-1 label:active {
   color: #fff;
   background-color: #231F20 !important;
   border-color: #231F20 !important;
   cursor: pointer;
 }
 
-form#views-exposed-form-virtual-museum-page-1 input:checked + label { 
+form#views-exposed-form-taxonomy-term-page-1 input:checked + label { 
   color: #fff;
   background-color: #231F20 !important;
   border-color: #231F20 !important;
