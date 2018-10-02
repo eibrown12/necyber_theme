@@ -38,7 +38,7 @@
     {%- for item in links -%}
       <li class="nav-item" {{ item.attributes }}>
         {%- if item.link -%}
-			<a href="{{ item.url }}" class="nav-link">{{ item.title }}</a>
+			<a href="{{ url }}" class="nav-link">{{ item.text }}</a>
         {%- elseif item.text_attributes -%}
           <span{{ item.text_attributes }}>{{ item.text }}</span>
         {%- else -%}
