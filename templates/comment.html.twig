@@ -78,7 +78,7 @@
   <div class="media mb-4">
 	<div class="media-body">
 	  <h5 class="mt-0">{{ title }}</h5>
-	  {% set createdDate = getCreatedTime|date('M j, Y - g:i a') %}
+	  {% set createdDate = comment.getCreatedTime|date('M j, Y - g:i a') %}
 	  <i class="fa fa-user-o"></i> {{ author }} &nbsp; &nbsp; <i class="fa fa-clock-o"></i> {{ createdDate }}
 	  {{ content }}
 	</div>
