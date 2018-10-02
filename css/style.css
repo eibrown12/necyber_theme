@@ -816,3 +816,4 @@ form#views-exposed-form-taxonomy-term-page-1 input:checked + label {
   background-color: #231F20 !important;
   border-color: #231F20 !important;
 }
+.indented { margin-left: 50px; }
