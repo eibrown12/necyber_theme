@@ -39,11 +39,10 @@
       <li class="nav-item" {{ item.attributes }}>
         {%- if item.link -%}
 			{% if item.text == 'Delete' %}
-				{% set icon %}
-					<i class="fa fa-trash-o"></i> 
+				{% set text %}
+					<i class="fa fa-trash-o"></i> {{ item.text }}
 				{% endset %}
-				{% set item.text = icon ~ item.text %}
-				{{ item.link|merge({'#attributes': {'class': ['nav-link']}}) }}
+				{{ item.link|merge({'#attributes': text, item.url, {'class': ['nav-link']}}) }}
 			{% elseif item.text == 'Edit' %}
 				<i class="fa fa-pencil-square-o"></i> {{ item.link|merge({'#attributes': {'class': ['nav-link']}}) }}
 			{% elseif item.text == 'Reply' %}
