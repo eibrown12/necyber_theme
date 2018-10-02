@@ -42,7 +42,7 @@
 				{% set text %}
 					<i class="fa fa-trash-o"></i> {{ item.text }}
 				{% endset %}
-				{{ link(text, item.url, {'class': ['nav-link']}) }}
+				<a href="{{ item.link['#url']|render }}" class="nav-link">{{ text }}</a>
 			{% elseif item.text == 'Edit' %}
 				<i class="fa fa-pencil-square-o"></i> {{ item.link|merge({'#attributes': {'class': ['nav-link']}}) }}
 			{% elseif item.text == 'Reply' %}
