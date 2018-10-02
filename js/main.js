@@ -19,8 +19,8 @@
 		var $nav = $("#mainNav");
 		var $secNav = $("#secondaryNav");
 		var $combined = $nav.height() + $secNav.height();
-		$nav.toggleClass('scrolled shadow-sm', $(this).scrollTop() > $combined);
-		$secNav.toggleClass('scrolled', $(this).scrollTop() > $combined);
+		/*$nav.toggleClass('scrolled shadow-sm', $(this).scrollTop() > $combined);
+		$secNav.toggleClass('scrolled', $(this).scrollTop() > $combined);*/
 	}
   });
 })(jQuery); // End of use strict

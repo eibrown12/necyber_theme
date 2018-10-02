@@ -7,7 +7,7 @@
 
   'use strict';
 
-  Drupal.behaviors.ne1oa_theme = {
+  Drupal.behaviors.necyber_theme = {
     attach: function (context, settings) {
 
     }
