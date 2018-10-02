@@ -44,7 +44,6 @@
 				{% set item.text %}<i class="fa fa-pencil-square-o"></i> Edit{% endset %}
 			{% elseif item.text == 'Reply' %}
 				{% set item.text %}<i class="fa fa-reply"></i> Reply{% endset %}
-				{% set item.text = "<i class='fa fa-reply'></i> Reply" %}
 			{% endif %}
 			{{ item.link|merge({'#attributes': {'class': ['nav-link']}}) }}
         {%- elseif item.text_attributes -%}
