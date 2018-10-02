@@ -44,9 +44,15 @@
 				{% endset %}
 				<a href="{{ item.link['#url']|render }}" class="nav-link">{{ text }}</a>
 			{% elseif item.text == 'Edit' %}
-				<i class="fa fa-pencil-square-o"></i> {{ item.link|merge({'#attributes': {'class': ['nav-link']}}) }}
+				{% set text %}
+					<i class="fa fa-pencil-square-o"></i> {{ item.text }}
+				{% endset %}
+				<a href="{{ item.link['#url']|render }}" class="nav-link">{{ text }}</a>
 			{% elseif item.text == 'Reply' %}
-				<i class="fa fa-reply"></i> {{ item.link|merge({'#attributes': {'class': ['nav-link']}}) }}
+				{% set text %}
+					<i class="fa fa-reply"></i> {{ item.text }}
+				{% endset %}
+				<a href="{{ item.link['#url']|render }}" class="nav-link">{{ text }}</a>
 			{% else %}
 				{{ item.link|merge({'#attributes': {'class': ['nav-link']}}) }}
 			{% endif %}
