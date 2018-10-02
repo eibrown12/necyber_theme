@@ -38,6 +38,13 @@
     {%- for item in links -%}
       <li class="nav-item" {{ item.attributes }}>
         {%- if item.link -%}
+			{% if item.text == 'Delete' %}
+				<i class="fa fa-trash-o"></i> 
+			{% elseif item.text == 'Edit' %}
+				<i class="fa fa-pencil-square-o"></i> 
+			{% elseif item.text == 'Reply' %}
+				<i class="fa fa-reply"></i> 
+			{% endif %}
 			{{ item.link|merge({'#attributes': {'class': ['nav-link']}}) }}
         {%- elseif item.text_attributes -%}
           <span{{ item.text_attributes }}>{{ item.text }}</span>
