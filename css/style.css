@@ -817,6 +817,6 @@ form#views-exposed-form-taxonomy-term-page-1 input:checked + label {
   border-color: #231F20 !important;
 }
 .indented { margin-left: 50px; border-left: 2px solid #231F20; padding: 10px; }
-@media and screen (max-width: 767px) {
+@media screen and (max-width: 767px) {
 	.indented { margin-left: 25px; }
 }
