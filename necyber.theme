@@ -36,6 +36,14 @@ function necyber_form_alter(&$form, FormStateInterface $form_state, $form_id) {
 	unset($form['name']['#description']);	
 	unset($form['pass']['#description']);	
   }
+  if ($form_id == 'user_register_form') {
+	$form['mail']['#attributes']['class'][] = 'form-control';
+	$form['name']['#attributes']['class'][] = 'form-control';
+	$form['field_institution[0][value]']['#attributes']['class'][] = 'form-control';
+	$form['field_position[0][value]']['#attributes']['class'][] = 'form-control';
+	$form['timezone']['#attributes']['class'][] = 'form-control';
+	$form['actions']['submit']['#attributes']['class'][] = 'btn btn-success';
+  }
   
   if ($form_id == 'contact_message_questions_form') {
 	// Name
