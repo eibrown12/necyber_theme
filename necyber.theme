@@ -41,7 +41,6 @@ function necyber_form_alter(&$form, FormStateInterface $form_state, $form_id) {
 	$form['name']['#attributes']['class'][] = 'form-control';
 	$form['field_institution[0][value]']['#attributes']['class'][] = 'form-control';
 	$form['field_position[0][value]']['#attributes']['class'][] = 'form-control';
-	$form['timezone']['#attributes']['class'][] = 'form-control';
 	$form['actions']['submit']['#attributes']['class'][] = 'btn btn-success';
   }
   
