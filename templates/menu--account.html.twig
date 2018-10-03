@@ -45,7 +45,14 @@
       %}
       {% if menu_level == 0 %}
         <li{{ item.attributes.addClass(item_classes) }}>
-			{{ link(item.title, item.url, { 'class':['nav-link', item.is_expanded ? 'dropdown-toggle', 'btn btn-outline-dark my-1 my-lg-0 my-sm-1 ml-lg-2 ml-3'] }) }}
+			{% if item.title == "Log in" %}
+				{% set title %}
+				  <i class="fa fa-sign-in"></i> {{ item.title }}
+				{% endset %}
+				{{ link(title, item.url, { 'class':['nav-link', item.is_expanded ? 'dropdown-toggle', 'btn btn-outline-dark my-1 my-lg-0 my-sm-1 ml-lg-2 ml-3'] }) }}
+			{% else %}
+				{{ link(item.title, item.url, { 'class':['nav-link', item.is_expanded ? 'dropdown-toggle', 'btn btn-outline-dark my-1 my-lg-0 my-sm-1 ml-lg-2 ml-3'] }) }}
+			{% endif %}
       {% else %}
 		{% if item.title == "divider" %}
 			<div class="dropdown-divider"></div>
