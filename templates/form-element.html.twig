@@ -77,7 +77,7 @@
       {{ description.content }}
     </small>
   {% endif %}
-  {{ children }}
+  {{ children|merge({'#attributes': {'class': ['form-control']}}) }}
   {% if suffix is not empty %}
     <span class="field-suffix">{{ suffix }}</span>
   {% endif %}
