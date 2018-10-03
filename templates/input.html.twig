@@ -12,9 +12,20 @@
  * @ingroup themeable
  */
 #}
-{%
-  set classes = [
-    'form-control',
-  ]
-%}
+
+{% if attributes.type == 'text' or attributes.type == 'email' or attributes.type == 'password' %}
+	{%
+	  set classes = [
+	    'form-control',
+	  ]
+	%}
+{% elseif attributes.type == 'submit' %}
+	{%
+	  set classes = [
+	    'btn btn-success',
+	  ]
+	%}
+{% else %}
+
+{% endif %}
 <input{{ attributes.addClass(classes) }} />{{ children }}
