@@ -15,7 +15,7 @@ function necyber_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   if ($form_id == 'search_block_form') {
     $form['keys']['#attributes']['placeholder'] = t('Search');
   }
-  if ($form_id == 'search_content_form') {
+  if ($form_id == 'form_search_form') {
     $form['key']['#title_display'] = 'invisible';
 	$form['key']['#attributes']['placeholder'] = t('Search');
   }
