@@ -68,7 +68,7 @@
     <thead>
       <tr>
         {% for cell in header %}
-          <{{ cell.tag }}{{ cell.attributes }} scope="col">
+          <{{ cell.tag }}{{ cell.attributes.setAttribute('scope', 'col') }}>
             {{- cell.content -}}
           </{{ cell.tag }}>
         {% endfor %}
