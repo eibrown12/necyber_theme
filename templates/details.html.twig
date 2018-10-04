@@ -30,9 +30,9 @@
     ]
   %}
   {%- if title -%}
-    <h6{{ summary_attributes.addClass(summary_classes) }}>{{ title }}</h6>
+    <h6{{ summary_attributes.addClass(summary_classes) }} data-toggle="collapse" data-target="#collapsed"><i class="fa fa-chevron-down pull-right"></i>{{ title }}</h6>
   {%- endif -%}
-	<div class="card-body">
+	<div id="collapsed" class="card-body collapse">
   {% if errors %}
     <div class="invalid-feedback">
       {{ errors }}
