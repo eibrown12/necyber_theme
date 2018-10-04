@@ -20,11 +20,19 @@
 	  ]
 	%}
 {% elseif attributes.type == 'submit' %}
-	{%
-	  set classes = [
-	    'btn',
-	  ]
-	%}
+	{% if attributes.value == 'Submit' %}
+		{%
+		  set classes = [
+			'btn btn-success',
+		  ]
+		%}
+	{% else %}
+		{%
+		  set classes = [
+			'btn btn-primary',
+		  ]
+		%}
+	{% endif %}
 {% else %}
 
 {% endif %}
