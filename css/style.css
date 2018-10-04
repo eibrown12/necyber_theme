@@ -33,6 +33,13 @@ body {
   flex: 1 0 auto;
 }
 
+.card-header .fa {
+  transition: .3s transform ease-in-out;
+}
+.card-header .collapsed .fa {
+  transform: rotate(90deg);
+}
+
 p {
   line-height: 1.5;
   //margin: 30px 0;
