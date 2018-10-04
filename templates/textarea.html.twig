@@ -16,5 +16,10 @@
  */
 #}
 <div{{ wrapper_attributes }}>
-  <textarea{{ attributes }} class="form-control">{{ value }}</textarea>
+{%
+	set classes = [
+		'form-control',
+	]
+%}
+  <textarea{{ attributes.addClass(classes) }}>{{ value }}</textarea>
 </div>
