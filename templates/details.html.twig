@@ -32,7 +32,7 @@
   {%- if title -%}
     <h6{{ summary_attributes.addClass(summary_classes) }}>{{ title }}</h6>
   {%- endif -%}
-
+	<div class="card-body">
   {% if errors %}
     <div class="invalid-feedback">
       {{ errors }}
@@ -42,4 +42,5 @@
   {{ description }}
   {{ children }}
   {{ value }}
+  </div>
 </div>
