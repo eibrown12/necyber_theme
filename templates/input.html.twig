@@ -20,7 +20,7 @@
 	  ]
 	%}
 {% elseif attributes.type == 'submit' %}
-	{% if attributes.value == 'Submit' %}
+	{% if attributes.value == 'Submit' or attributes.value == 'Save' %}
 		{%
 		  set classes = [
 			'btn btn-success',
