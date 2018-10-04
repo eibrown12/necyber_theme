@@ -409,6 +409,12 @@ li.dropdown-item a.nav-link:active {
 	transition: all .5s ease;
 }
 
+@media screen and (max-width: 575.98px) {
+	#search:focus {
+		width: initial;
+	}
+}
+
 header.masthead {
   margin-bottom: 50px;
   background: no-repeat center center;
