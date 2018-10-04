@@ -36,7 +36,7 @@ body {
 .card-header .fa {
   transition: .3s transform ease-in-out;
 }
-.card-header .collapsed .fa {
+.card-header.collapsed .fa {
   transform: rotate(90deg);
 }
 
