@@ -19,6 +19,10 @@ function necyber_form_alter(&$form, FormStateInterface $form_state, $form_id) {
     $form['keys']['#title_display'] = 'invisible';
 	$form['keys']['#attributes']['placeholder'] = t('Search');
   }
+  if ($form_id == 'comment_form') {
+	$form['field_subject']['widget'][0]['#prefix'] = '<div class="card mb-4"><h5 class="card-header">Add comment</h5><div class="card-body">';
+	$form['actions']['#suffix'] = '</div></div>';
+  }
   if ($form_id == 'user_login_form') {
     $form['name']['#prefix'] = '<div class="col-lg-8 mx-auto text-center card my-4"><div class="card-body"><div class="control-group form-group">';
 	$form['name']['#suffix'] = '</div>';
