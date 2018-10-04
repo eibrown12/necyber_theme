@@ -21,7 +21,7 @@
 	'card mb-4',
   ]
 %}
-<div{{ attributes }}>
+<div{{ attributes.addClass(card_classes) }}>
   {%
     set summary_classes = [
       required ? 'js-form-required',
