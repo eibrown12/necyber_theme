@@ -68,13 +68,13 @@
 			</div>
 		  </div>
 		</nav>
-	 <nav class="navbar navbar-expand-lg navbar-light bg-light" id="mainNav">
+	 <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm" id="mainNav">
 		  <div class="container">
 			<a class="navbar-brand" href="/"><img src="/themes/necyber_theme/logo.png" class="logo" alt="Northeast Cyberteam"></a>
 			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 			  <i class="fa fa-bars"></i>
 			</button>
-			<div class="collapse navbar-collapse" id="navbarResponsive"> 
+			<div class="collapse navbar-collapse" id="navbarResponsive">
 			{% if page.primary_menu %}
 				  {{ page.primary_menu }}
 			{% endif %}
@@ -102,20 +102,18 @@
 		{% if page.banner_image %}
 			{% set escdiv = 'div' %}
 			<header class="masthead" style="background-image: url('{% autoescape 'div' %}{% spaceless %}{{- page.banner_image -}}{% endspaceless %}{% endautoescape %}')">
-		{% else %}
-			<header class="masthead" style="background-image: url('/themes/necyber_theme/img/background.jpg')">
+        <div class="overlay"></div>
+       <div class="container">
+       <div class="row">
+         <div class="col-lg-8 col-md-10 mx-auto">
+         <div class="site-heading">
+
+         </div>
+         </div>
+       </div>
+       </div>
+     </header>
 		{% endif %}
-		  <div class="overlay"></div>
-		  <div class="container">
-			<div class="row">
-			  <div class="col-lg-8 col-md-10 mx-auto">
-				<div class="site-heading">
-				  
-				</div>
-			  </div>
-			</div>
-		  </div>
-		</header>
 	{% endif %}
 
 	{{ page.header }}
