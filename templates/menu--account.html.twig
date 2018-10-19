@@ -55,7 +55,6 @@
   				  <i class="fa fa-dashboard"></i> Dashboard
   				{% endset %}
   				{{ link(title, item.url, { 'class':['nav-link', item.is_expanded ? 'dropdown-toggle'] }) }}
-  			{% else %}
       {% else %}
 				{{ link(item.title, item.url, { 'class':['nav-link', item.is_expanded ? 'dropdown-toggle'] }) }}
 			{% endif %}
